@@ -1,0 +1,27 @@
+
+[
+  {
+    "input": "I was charged twice this month.",
+    "expected": "billing"
+  },
+  {
+    "input": "I need a refund for my last order.",
+    "expected": "billing"
+  },
+  {
+    "input": "The API returns an internal server error.",
+    "expected": "technical_support"
+  },
+  {
+    "input": "The application crashes when I log in.",
+    "expected": "technical_support"
+  },
+  {
+    "input": "What are your opening hours?",
+    "expected": "general_inquiry"
+  },
+  {
+    "input": "My account was suspended because my payment failed.",
+    "expected": "billing"
+  }
+]
