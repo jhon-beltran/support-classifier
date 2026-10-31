@@ -5,15 +5,31 @@
     "expected": "billing"
   },
   {
-    "input": "I need a refund for my last order.",
+    "input": "I need a refund for my subscription.",
     "expected": "billing"
   },
   {
-    "input": "The API returns an internal server error.",
-    "expected": "technical_support"
+    "input": "My payment failed and my account was suspended.",
+    "expected": "billing"
+  },
+  {
+    "input": "My credit card was declined during checkout.",
+    "expected": "billing"
   },
   {
     "input": "The application crashes when I log in.",
+    "expected": "technical_support"
+  },
+  {
+    "input": "The API returns a 500 server error.",
+    "expected": "technical_support"
+  },
+  {
+    "input": "My account is locked after too many wrong passwords.",
+    "expected": "technical_support"
+  },
+  {
+    "input": "The dashboard is not loading any data.",
     "expected": "technical_support"
   },
   {
@@ -21,7 +37,15 @@
     "expected": "general_inquiry"
   },
   {
-    "input": "My account was suspended because my payment failed.",
-    "expected": "billing"
+    "input": "Where can I find your pricing information?",
+    "expected": "general_inquiry"
+  },
+  {
+    "input": "Do you offer support in Spanish?",
+    "expected": "general_inquiry"
+  },
+  {
+    "input": "How can I update my contact information?",
+    "expected": "general_inquiry"
   }
 ]

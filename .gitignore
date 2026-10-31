@@ -24,3 +24,6 @@ __pycache__/
 
 # Operating system files
 .DS_Store
+
+# Local evaluation reports
+evals/latest_report.json
