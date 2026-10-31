@@ -66,8 +66,8 @@ def classify_message(message: str) -> ClassificationResult:
     text_blocks = [block.text for block in response.content if block.type == "text"]
 
     # Reject an unexpected empty response.
-    if len(text_blocks) == 0:
-        raise RuntimeError("Expected one JSON text block")
+    if len(text_blocks) != 1:
+        raise RuntimeError("Expected exactly one JSON text block")
 
     # Validate the generated JSON.
     result = parse_classification(text_blocks[0])

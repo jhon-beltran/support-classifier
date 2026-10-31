@@ -4,7 +4,7 @@ A Python CLI application that classifies customer support messages using the Ant
 
 ## Tech Stack
 
-- Python 3.12
+- Python 3.14
 - uv
 - Anthropic Python SDK
 - Pydantic
