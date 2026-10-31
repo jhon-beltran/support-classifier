@@ -12,6 +12,9 @@ def run_evaluation() -> None:
     with DATASET_PATH.open(encoding="utf-8") as file:
         dataset = json.load(file)
 
+    if not dataset:
+        raise ValueError("Evaluation dataset cannot be empty")
+
     # Track the number of correct predictions.
     correct_predictions = 0
 
